@@ -1,1 +1,30 @@
 
+
+package PRACT1;
+
+
+import java.util.ArrayList;
+import java.util.Scanner;
+public class partA {
+    public static void main(String[]args){
+        ArrayList<String> list = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        for(int i=0 ; i<3;i++){
+            String strNum= sc.nextLine();
+            list.add(strNum);
+
+        }
+        System.out.print(list);
+        int sum =0;
+        for( String valString : list){
+      
+                int val = Integer.parseInt(valString);
+                sum += val;
+           
+        }
+        
+        System.out.println("Sum of numbers: " + sum);
+       sc.close();
+    }
+  
+}
